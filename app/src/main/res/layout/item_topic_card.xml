@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#fff"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardPreventCornerOverlap="true"
+        card_view:cardUseCompatPadding="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/topic_image_pic"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_marginTop="25dp"
+                android:background="#eee"
+                android:scaleType="fitXY"/>
+
+            <ImageView
+                android:id="@+id/topic_image_headpic"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:scaleType="fitXY"/>
+
+            <TextView
+                android:id="@+id/topic_text_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/topic_image_headpic"
+                android:text="李东伟/急诊医生"
+                android:layout_marginTop="3dp"/>
+
+            <TextView
+                android:id="@+id/topic_text_alias"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/topic_image_pic"
+                android:layout_marginTop="5dp"
+                android:text="我是急诊去全科医生李东伟"
+                android:maxLines="2"
+                android:lineSpacingMultiplier="1.5"
+                android:layout_marginLeft="15dp"
+                android:textSize="14sp"
+                android:textColor="#000"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/topic_text_alias"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <TextView
+                    android:id="@+id/topic_text_classification"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="健康 | 6.3万关注 | 1096提问"
+                    android:layout_centerVertical="true"/>
+
+                <TextView
+                    android:id="@+id/topic_text_attention"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="关注"
+                    android:drawableLeft="@mipmap/live_sofa_right"
+                    android:drawablePadding="5dp"
+                    android:gravity="center"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/bg_textview"
+                    android:textColor="#fff"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>
+

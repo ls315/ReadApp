@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <com.cyhd.readapp.view.VerticalSwipeRefreshLayout
+        android:id="@+id/read_detail_swipe"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/read_detai_recycle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="vertical" >
+        </android.support.v7.widget.RecyclerView>
+
+    </com.cyhd.readapp.view.VerticalSwipeRefreshLayout>
+
+
+</LinearLayout>

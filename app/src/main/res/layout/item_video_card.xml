@@ -1,0 +1,139 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="10dp">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        card_view:cardBackgroundColor="#fff"
+        card_view:cardCornerRadius="5dp"
+        card_view:cardPreventCornerOverlap="true"
+        card_view:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp">
+
+            <TextView
+                android:id="@+id/video_text_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_toRightOf="@id/topic_image_headpic"
+                android:maxLines="2"
+                android:text="青春美女的制服诱惑"
+                android:textColor="#000"
+                android:textSize="15dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="#000"/>
+
+                <VideoView
+                    android:id="@+id/video_video"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:layout_gravity="center_horizontal" />
+
+
+                <ProgressBar
+                    android:id="@+id/video_progress"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_gravity="center"/>
+
+                <ImageView
+                    android:id="@+id/video_image_cover"
+                    android:layout_width="match_parent"
+                    android:layout_height="180dp"
+                    android:background="#eee"
+                    android:scaleType="fitXY" />
+
+                <ImageView
+                    android:id="@+id/video_image_play"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@mipmap/biz_video_play_big_icon"
+                    android:scaleType="fitXY"
+                    android:layout_gravity="center"/>
+
+                <TextView
+                    android:id="@+id/video_text_length"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#fff"
+                    android:text="ddddd"
+                    android:layout_gravity="bottom|right"
+                    android:layout_marginBottom="15dp"
+                    android:layout_marginRight="15dp"/>
+
+            </FrameLayout>
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_below="@id/topic_text_alias"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+                <ImageView
+                    android:id="@+id/video_image_topic"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/video_text_topicname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="流行MV"
+                    android:textColor="#000"
+                    android:layout_toRightOf="@id/video_image_topic"
+                    android:layout_marginLeft="10dp"/>
+
+                <ImageView
+                    android:id="@+id/video_image_share"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_alignParentRight="true"
+                    android:src="@mipmap/biz_tie_comment_reply_share_icon"
+                    android:layout_centerVertical="true"
+                    android:scaleType="fitXY"/>
+
+                <TextView
+                    android:id="@+id/video_text_tie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:drawableLeft="@mipmap/biz_video_list_item_tie"
+                    android:layout_toLeftOf="@id/video_image_share"
+                    android:layout_marginRight="50dp"
+                    android:gravity="center_vertical"
+                    android:drawablePadding="5dp"
+                    android:scaleType="fitXY"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+</FrameLayout>
+
